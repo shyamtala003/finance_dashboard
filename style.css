@@ -53,8 +53,8 @@ body::after
     top: 0%;
     right: 0%;
     transform: translate(20%,-10%);
-    width: 350px;
-    height: 350px;
+    width: 40%;
+    height: 40%;
     border-radius: 50%;
     background: var(--bg-circle-1);
     filter: blur(100px);
@@ -68,8 +68,8 @@ body::before
     bottom: 0%;
     left: 0%;
     transform: translate(-20%,10%);
-    width: 350px;
-    height: 350px;
+    width: 40%;
+    height: 40%;
     border-radius: 50%;
     background: var(--bg-circle-2);
     filter: blur(100px);
@@ -110,12 +110,13 @@ nav .logo
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 nav .logo img
 {
     width:  40px;
+    height: 43px;
 }
 
 nav .logo span
@@ -171,6 +172,7 @@ a.nav_link svg .icon
 .life_cover_offer img
 {
     width: 130px;
+    height: 150px;
 }
 
 .life_cover_offer  .life_cover_text
@@ -245,6 +247,7 @@ a.nav_link svg .icon
 .profile .img_with_name img
 {
     width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -292,11 +295,529 @@ a.nav_link svg .icon
     color: var(--text-white);
 }
 
-section
+/* --------x-------------sidebar ended------------x-----------x---- */
+
+
+/* content section */
+section.main_content
 {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
     background: transparent;
+}
+
+section.main_content .topbar
+{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-poppins);
+}
+
+.topbar .overview_text p.title
+{
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.topbar .overview_text p.desc
+{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.topbar .topbar_icons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.topbar .topbar_icons a
+{
+    display: grid;
+    place-items: center;
+    padding: 8px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.topbar .topbar_icons a.alert
+{
+    position: relative;
+}
+
+.topbar .topbar_icons a.alert::after
+{
+    content: '';
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #ff0000;
+}
+
+section.main_content section
+{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    font-family: var(--font-poppins);
+}
+
+section.main_content section main
+{
+    /* background: #000; */
+    width: 100%;
+    height: 100vh;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    padding-inline:20px ;
+}
+
+main .bank_balance_card
+{
+    background: #ffffff;
+    padding: 5% 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border-radius: 30px;
+}
+
+.bank_balance_card p:first-child
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-grey);
+    text-transform: uppercase;
+}
+
+.bank_balance_card p.balance
+{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.bank_balance_card .account_no
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bank_balance_card .account_no span
+{
+    color: var(--text-dark-grey);
+}
+
+.bank_balance_card .account_no span>span.no
+{
+    color: var(--text-black);
+    font-weight: 600;
+}
+
+.bank_balance_card .account_no button
+{
+    background: transparent;
+}
+
+main .button_group
+{
+    margin-top: 30px;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .button_group button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    cursor: pointer;
+    background: transparent;
+}
+
+main .button_group .r_transaction
+{
+    position: relative;
+    background:var(--btn-primary);
+    border-radius: 25px;
+    color: var(--text-white);
+    box-shadow: 0px 5px 30px 0px var(--btn-primary);
+}
+
+main .button_group .r_transaction::before
+{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: var(--btn-primary);
+    transform: translate(-50%,-50%) rotate(45deg);
+    z-index: -1;
+}
+
+main .button_group .r_transaction:hover
+{
+    background: var(--btn-secondary);    
+    box-shadow: 0px 5px 30px 0px var(--btn-secondary);
+
+}
+main .button_group .r_transaction:hover::before
+{
+    
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: var(--btn-secondary);
+    transform: translate(-50%,-50%) rotate(45deg);
+    z-index: -1;
+}
+
+main .button_group .s_analysis:hover
+{
+    background: var(--btn-secondary);
+    color: var(--text-white);
+    border-radius: 25px;
+    box-shadow: 0px 5px 30px 0px var(--btn-secondary);
+}
+
+main .button_group .s_analysis:hover .icon
+{
+    fill: var(--text-white);
+}
+
+main .transaction_info
+{
+    margin-top: 40px;
+}
+
+main .transaction_info .transaction_date
+{
+    color: var(--text-black);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--text-grey);
+    margin-bottom: 24px;
+}
+
+.transaction_info .transaction_data
+{
+    margin-block:40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transaction_data .get_send_money
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.get_send_money span.icon
+{
+    display: grid;
+    place-content: center;
+    padding: 12px;
+    background: var(--text-white);
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px 2px var(--text-grey);
+}
+
+.get_send_money .trasaction_details
+{
+    display: flex;  
+    flex-direction: column;
+    gap: 5px;
+}
+
+p.transaction_metadata > span
+{
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.get_send_money .trasaction_details p:last-child
+{
+    font-size: 12px;
+    color: var(--text-dark-grey);
+    font-weight: 500;
+}
+
+.transaction_value
+{
+    font-weight: 500;
+}
+
+
+
+.show_more
+{
+    width: 100%;
+    background: transparent;
+    animation: up_down 1.5s linear infinite;
+}
+
+@keyframes up_down {
+    0%,100%
+    {
+        transform: translateY(50%);
+    }50%
+    {
+        transform: translateY(0%);
+    }
+}
+
+/*-------x------------- main end----------x------------- */
+
+/* aside section started */
+
+section.main_content section aside
+{
+    width: 100%;
+    height: 100vh;
+    padding-inline:20px ;
+    font-family: var(--font-poppins);
+}
+
+aside .transfer_money_section
+{
+    padding: 14px 24px;
+    background: #ffffff;
+    border-radius: 18px;
+}
+
+.transfer_money_section p.title
+{
+    margin-top: 10px;
+    color: var(--text-grey);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.transfer_money_section .button_group
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transfer_money_section .button_group button
+{
+    padding: 12px 24px;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .6s ease;
+}
+
+.button_group button.via_no
+{
+    color: var(--text-primary);
+    border: 1px solid var(--text-primary);
+}
+
+.button_group button.via_no:hover,.button_group button.via_ac:hover
+{
+    background: var(--btn-primary);
+    color: var(--text-white);
+}
+
+.transfer_money_section form
+{
+    margin-top: 20px;
+}
+
+.transfer_money_section form .phone_no_info
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--text-grey);
+    padding-bottom: 10px;
+}
+
+.transfer_money_section form .phone_no_info label
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    border-right: 2px solid var(--text-grey);
+    font-size: 14px;
+}
+
+.transfer_money_section form .phone_no_info input[type="number"]
+{
+    font-size: 14px;
+    padding: 8px 14px;
+    border: none;
+    outline: none;
+    caret-color: var(--text-primary);
+}
+
+.transfer_money_section form .phone_no_info input[type="number"]::placeholder
+{
+    font-size: 14px;
+}
+
+.transfer_money_section form .phone_no_info input[type="number"]::-webkit-inner-spin-button
+{
+    display: none;
+}
+
+form .phone_no_info label img
+{
+    width: 20px;
+}
+
+.transfer_money_section form .phone_no_info img
+{
+    width: 30px;
+    border-radius: 50%;
+}
+
+form .amount
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--text-grey);
+}
+
+.amount label
+{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.amount input[type="number"]
+{
+    font-size: 14px;
+    padding: 8px 14px;
+    border: none;
+    outline: none;
+    caret-color: var(--text-primary);
+}
+
+.amount input[type="number"]::placeholder
+{
+    font-size: 14px;
+}
+
+.amount input[type="number"]::-webkit-inner-spin-button
+{
+    display: none;
+}
+
+
+form input[type="submit"]
+{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color:var(--btn-secondary);
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--text-white);
+    border-radius:10px;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    transition: .6  s ease;
+}
+
+form input[type="submit"]:hover
+{
+    background: var(--btn-primary);
+}
+
+.cards
+{
+    margin-top: 30px;
+    background: #ffffff;
+    padding: 20px 20px;
+    border-radius: 16px;
+}
+
+.cards .title_with_button
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sliber_controller
+{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.cards .title_with_button p.title
+{
+    font-size: 12px;
+    color: var(--text-grey);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* card slider or swiper code */
+.swiper {
+    padding: 20px;
+    width: 100%;
+    /* width: 90%; */
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .swiper-slide img
+  {
+    width: 90%;
+  }
+
+.swiper-page
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

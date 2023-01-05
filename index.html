@@ -7,6 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finpay</title>
 
+    <meta name="title" content="manage your finance with us">
+    <meta name="description"
+        content="Finpay finance dashboard. all in one. manage everything using over superfast web app">
+    <meta name="keywords" content="Finpay,finance,dashboards,finance website">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    <meta name="author" content="shyam Tala">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
     <!-- stlyesheet -->
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -24,7 +38,7 @@
             <!-- menubar -->
             <div class="nav_links">
 
-                <a href="#" class="nav_link active">
+                <a href="#" class="nav_link active" aria-label="overview">
                     <div class="nav_link_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                             <path fill="none" d="M0 0h24v24H0z" />
@@ -38,7 +52,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="nav_link">
+                <a href="#" class="nav_link" aria-label="reports">
                     <div class="nav_link_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                             <path fill="none" d="M0 0h24v24H0z" />
@@ -52,7 +66,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="nav_link">
+                <a href="#" class="nav_link" aria-label="cards">
                     <div class="nav_link_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                             <path fill="none" d="M0 0h24v24H0z" />
@@ -66,7 +80,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="nav_link">
+                <a href="#" class="nav_link" aria-label="support help">
                     <div class="nav_link_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                             <path fill="none" d="M0 0h24v24H0z" />
@@ -90,7 +104,7 @@
                     <p class="desc">You'r eligible for instant Life cover upto 2,00,000 without any medical test for
                         documentation</p>
                 </div>
-                <a href="#">buy now</a>
+                <a href="#" aria-label="grab offer">buy now</a>
             </div>
 
             <!-- profile button -->
@@ -110,10 +124,245 @@
 
         </nav>
 
-        <section>
+        <section class="main_content">
 
+            <div class="topbar">
+                <div class="overview_text">
+                    <p class="title">Overview</p>
+                    <p class="desc">Hi Shyam, welcome back!</p>
+                </div>
+
+                <div class="topbar_icons">
+                    <a href="#" aria-label="search things" class="topbar_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z" />
+                        </svg>
+                    </a>
+
+                    <a href="#" aria-label="notification bell" class="topbar_icon alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M22 20H2v-2h1v-6.969C3 6.043 7.03 2 12 2s9 4.043 9 9.031V18h1v2zM5 18h14v-6.969C19 7.148 15.866 4 12 4s-7 3.148-7 7.031V18zm4.5 3h5a2.5 2.5 0 1 1-5 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <section>
+
+                <main>
+
+                    <div class="bank_balance_card">
+                        <p>your balance</p>
+                        <p class="balance">₹40,25,600.00</p>
+                        <div class="account_no">
+                            <span>Saving A/C : <span class="no">xxxxxxx1234</span></span>
+                            <button class="view_account_no" aria-label="show_ac">
+                                <img src="./images/eye-off-line.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="button_group">
+                        <button class="r_transaction" aria-label="show_transaction">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path d="M16 16v-4l5 5-5 5v-4H4v-2h12zM8 2v3.999L20 6v2H8v4L3 7l5-5z"
+                                    fill="rgba(255,255,255,1)" />
+                            </svg>
+                            <span>recent transactions</span>
+                        </button>
+
+                        <button class="s_analysis" aria-label="show_analysis">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path class="icon"
+                                    d="M11 .543c.33-.029.663-.043 1-.043C18.351.5 23.5 5.649 23.5 12c0 .337-.014.67-.043 1h-1.506c-.502 5.053-4.766 9-9.951 9-5.523 0-10-4.477-10-10 0-5.185 3.947-9.449 9-9.95V.542zM11 13V4.062A8.001 8.001 0 0 0 12 20a8.001 8.001 0 0 0 7.938-7H11zm10.448-2A9.503 9.503 0 0 0 13 2.552V11h8.448z" />
+                            </svg>
+                            <span>spend analysis</span>
+                        </button>
+
+                    </div>
+
+                    <div class="transaction_info">
+
+                        <div class="transaction_date">
+                            Today | 22nd jan, 2020
+                        </div>
+
+                        <div class="transaction_data">
+                            <div class="get_send_money">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path d="M5 11h14v2H5z" fill="rgba(255,0,0,1)" />
+                                    </svg>
+                                </span>
+                                <div class="trasaction_details">
+                                    <p class="transaction_metadata">Transfer to <span>zomato</span></p>
+                                    <p>Online food order</p>
+                                </div>
+                            </div>
+
+                            <p class="transaction_value">₹1,250.60</p>
+                        </div>
+
+                        <div class="transaction_data">
+                            <div class="get_send_money">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="#24cca7" /></svg>
+                                </span>
+                                <div class="trasaction_details">
+                                    <p class="transaction_metadata">Received via paypal from <span>Inueron</span></p>
+                                    <p>Project payment</p>
+                                </div>
+                            </div>
+
+                            <p class="transaction_value">₹42,840.00</p>
+                        </div>
+
+                    </div>
+
+                    <div class="transaction_info">
+
+                        <div class="transaction_date">
+                            Yesterday | 21nd jan, 2020
+                        </div>
+
+                        <div class="transaction_data">
+                            <div class="get_send_money">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path d="M5 11h14v2H5z" fill="rgba(255,0,0,1)" />
+                                    </svg>
+                                </span>
+                                <div class="trasaction_details">
+                                    <p class="transaction_metadata">Transfer to <span>nike</span></p>
+                                    <p>Shopping</p>
+                                </div>
+                            </div>
+
+                            <p class="transaction_value">₹13,250.60</p>
+                        </div>
+
+                        <div class="transaction_data">
+                            <div class="get_send_money">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" fill="#24cca7" /></svg>
+                                </span>
+                                <div class="trasaction_details">
+                                    <p class="transaction_metadata">Received via paytm from <span>PW skills</span></p>
+                                    <p>Project payment</p>
+                                </div>
+                            </div>
+
+                            <p class="transaction_value">₹1,42,840.00</p>
+                        </div>
+
+                    </div>
+
+                    <button class="show_more" aria-label="show_more">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" /></svg>
+                    </button>
+
+                </main>
+
+                <aside>
+
+                    <div class="transfer_money_section">
+                        <p class="title">quick transfer</p>
+                        <div class="button_group">
+                            <button class="via_no" aria-label="via_no">via mobile no.</button>
+                            <button class="via_ac" aria-label="via_ac">via account no.</button>
+                        </div>
+
+                        <form method="post">
+                            <div class="phone_no_info">
+                                <label for="phone_no"><img src="./images/india.png" alt="">&nbsp;+91 </label>
+                                <input type="number" name="phone_no" id="phone_no" placeholder="92934929331">
+                                <img src="./images/profile_pic.webp" alt="">
+                            </div>
+
+                            <div class="amount">
+                                <div>
+                                    <label for="ruppes">₹</label>
+                                    <input type="number" name="phone_no" id="rupees" placeholder="30,550.00">
+                                </div>
+                                <span>INR</span>
+                            </div>
+
+                            <input type="submit" value="send to john" />
+                        </form>
+                    </div>
+
+                    <div class="cards">
+                        <div class="title_with_button">
+                            <p class="title">your cards</p>
+                            <div class="sliber_controller">
+
+                                <div class="swipe_next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm0-9h4v2h-4v3l-4-4 4-4v3z" />
+                                    </svg>
+                                </div>
+
+                                <div class="swipe_previous">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M12 11V8l4 4-4 4v-3H8v-2h4zm0-9c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./images/card1.webp" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/card2.webp" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/card3.webp" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="swiper-page"></div>
+                    </div>
+
+                </aside>
+
+            </section>
         </section>
     </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swipe_next",
+                prevEl: ".swipe_previous",
+            },
+            pagination: {
+                el: ".swiper-page",
+                clickable: true,
+            },
+        });
+    </script>
 
     <!-- script file -->
     <script src="./main.js"></script>
