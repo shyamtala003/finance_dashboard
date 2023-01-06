@@ -749,7 +749,7 @@ form input[type="submit"]:hover {
 }
 
 .swiper-slide img {
-    width: 90%;
+    width: 100%;
 }
 
 .swiper-page {
@@ -830,11 +830,38 @@ form input[type="submit"]:hover {
         padding-inline: 20px;
     }
 
+    
+    aside
+    {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding-bottom:30px ;
+    }
+
+    .transfer_money_section .button_group
+    {
+        justify-content: space-evenly;
+    }
+
+    .transfer_money_section p.title
+    {
+        width: 100%;
+        text-align: center;
+    }
+
     .cards {
         display: block;
         width: 100%;
     }
 
+
+    .cards .title_with_button
+    {
+        justify-content: space-evenly;
+    }
 
 }
 
@@ -868,15 +895,6 @@ form input[type="submit"]:hover {
         letter-spacing: 1px;
     }
 
-    aside
-    {
-        width: 100vw;
-        height: auto;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 30px;
-        padding-bottom:30px ;
-    }
 
     .sliber_controller
     {
@@ -887,6 +905,11 @@ form input[type="submit"]:hover {
     {
         width: 100%;
         text-align: center;
+    }
+
+    .cards
+    {
+        background: transparent;
     }
 
 }
