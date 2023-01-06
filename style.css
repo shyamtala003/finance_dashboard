@@ -769,7 +769,7 @@ form input[type="submit"]:hover {
 
     nav.sidebar {
         position: absolute;
-        background: url('./images/bg2.png'), rgba(255, 255, 255, 1);
+        background: url('./images/bg2.png'), rgba(243, 243, 243, 1);
         background-position-x: 0%;
         background-position-y: 70%;
         top: 0%;
@@ -910,6 +910,11 @@ form input[type="submit"]:hover {
     .cards
     {
         background: transparent;
+    }
+
+    nav
+    {
+        padding-bottom: 50px;
     }
 
 }
