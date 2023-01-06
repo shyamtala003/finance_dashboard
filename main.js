@@ -5,7 +5,6 @@ let menu = document.getElementById("sidebar");
 console.log(menuBtn);
 menuBtn.addEventListener("click",()=>{
     menu.classList.add("show_sidebar")
-    console.log(menu.classList);
 })
 
 closeBtn.addEventListener("click",()=>{
